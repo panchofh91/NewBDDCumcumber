@@ -13,12 +13,12 @@ public class RegisterPage_impl {
 
 
     public void navigateToRegisterPage(){
-        homePage.clickSignUp();
+//        homePage.clickSignUp();
     }
 
     public void registerNewUser(){
         NewUserInfo user = new NewUserInfo();
-        homePage.clickSignUp();
+//        homePage.clickSignUp();
         SeleniumUtils.sendKeys(signInPage.firstName, user.getFirstName());
         SeleniumUtils.sendKeys(signInPage.lastName, user.getLastName());
         SeleniumUtils.sendKeys(signInPage.phone, user.getCellPhoneNum());

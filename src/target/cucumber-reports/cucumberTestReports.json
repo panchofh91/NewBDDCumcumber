@@ -3,26 +3,26 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-26T18:13:14.850Z",
+        "start_timestamp": "2020-02-22T16:16:02.499Z",
         "before": [
           {
             "result": {
-              "duration": 11111348888,
+              "duration": 46770608629,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.beforeScenario()"
+              "location": "Hooks.beforeScenario(Scenario)"
             }
           }
         ],
         "line": 4,
-        "name": "Verify coupon code",
+        "name": "Verify new coupon is created",
         "description": "",
-        "id": "booking-pages-test;verify-coupon-code",
+        "id": "admin-coupon-page-test;verify-new-coupon-is-created",
         "after": [
           {
             "result": {
-              "duration": 345983840,
+              "duration": 940285374,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4924300329,
+              "duration": 13655723004,
               "status": "passed"
             },
             "line": 5,
@@ -43,154 +43,161 @@
             "match": {
               "location": "AdminHomePage_STEPS.user_opens_Admin_home_page()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 343448,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.afterStepActions()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3264281259,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d80.0.3987.116)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Techs-iMac.local\u0027, ip: \u0027192.168.0.128\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/_7/mr993l29215...}, goog:chromeOptions: {debuggerAddress: localhost:56392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f5f76c295c42d1094e3a978af30eb779\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\u0027submit\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\n\tat util.SeleniumUtils.click(SeleniumUtils.java:47)\n\tat step_definitions.step_impl.AdminHomePage_Impl.login(AdminHomePage_Impl.java:16)\n\tat step_definitions.AdminHomePage_STEPS.user_logsin_with_admin_account(AdminHomePage_STEPS.java:25)\n\tat ✽.User logsin with admin account(file:src/test/resources/features/adminCouponPage.feature:6)\n",
+              "duration": 5281196407,
+              "status": "failed"
             },
             "line": 6,
             "name": "User logsin with admin account",
             "match": {
               "location": "AdminHomePage_STEPS.user_logsin_with_admin_account()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 89749,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.afterStepActions()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 7315941036,
-              "status": "passed"
+              "duration": 2076449,
+              "status": "skipped"
             },
             "line": 7,
             "name": "User navigate to Coupons page",
             "match": {
               "location": "AdminHomePage_STEPS.user_navigate_to_Coupons_page()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 25588,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Hooks.afterStepActions()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 16652303645,
-              "status": "passed"
+              "duration": 580532,
+              "status": "skipped"
             },
             "line": 8,
             "name": "Creates a new coupon",
             "match": {
               "location": "AdminCouponPage_STEPS.creates_a_new_coupon()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 24603,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Hooks.afterStepActions()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6512736002,
-              "status": "passed"
+              "duration": 729746,
+              "status": "skipped"
             },
             "line": 9,
-            "name": "Verifies coupon is created",
-            "match": {
-              "location": "AdminCouponPage_STEPS.verifies_coupon_is_created()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7138485755,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User opens home page",
-            "match": {
-              "location": "HomePage_STEPS.user_opens_home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6678348633,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User opens \"first tour\" featured tour",
+            "name": "Verifies coupon is \"created\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"first tour\"",
-                  "offset": 11
+                  "val": "\"created\"",
+                  "offset": 19
                 }
               ],
-              "location": "HomePage_STEPS.user_opens_featured_tour(String)"
+              "location": "AdminCouponPage_STEPS.verifies_coupon_is(String)"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4482436835,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Clicks on \"Book Now\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Book Now\"",
-                  "offset": 10
+            "after": [
+              {
+                "result": {
+                  "duration": 23519,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "Hooks.afterStepActions()"
                 }
-              ],
-              "location": "BookingPage_STEPS.clicks_on_Book_Now_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2602236395,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Applies existing coupon code",
-            "match": {
-              "location": "BookingPage_STEPS.applies_existing_coupon_code()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1475110547,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Verifies positive message is displayed",
-            "match": {
-              "location": "BookingPage_STEPS.verifies_positive_message_is_displayed()"
-            },
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@bookingPage"
+            "name": "@adminCouponPage"
           },
           {
-            "name": "@couponTest"
+            "name": "@admin"
+          },
+          {
+            "name": "@addingCoupon"
           },
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@couponTest"
           }
         ]
       }
     ],
-    "name": "Booking Pages Test",
+    "name": "Admin Coupon Page test",
     "description": "",
-    "id": "booking-pages-test",
+    "id": "admin-coupon-page-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BookingPage.feature",
+    "uri": "file:src/test/resources/features/adminCouponPage.feature",
     "tags": [
       {
-        "name": "@bookingPage",
+        "name": "@adminCouponPage",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@admin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 18
         }
       }
     ]
